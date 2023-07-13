@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: blanchedalmond;
+}
+
+section {
+  width: 100%;
+  padding-top: 100px;
+  margin: 0 auto;
+  position: relative;
+}
+section h1 {
+  text-align: center;
+  margin-bottom: 50px;
+  color: darkcyan;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 60px;
+  letter-spacing: 5px;
+  text-decoration: underline;
+}
+section .options-block {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  margin: 80px auto 50px auto;
+}
+section .options-block .input-block {
+  position: relative;
+}
+section .options-block .input-block .input-search {
+  position: relative;
+  padding: 10px 20px;
+  font-size: 20px;
+  z-index: 111 !important;
+}
+section .options-block .input-block .input-search:focus-visible {
+  outline: none;
+}
+section .options-block .input-block .input-searched {
+  z-index: 11;
+  border: 1px solid black;
+  border-top: none;
+  width: 100%;
+  background-color: white;
+  position: absolute;
+  top: 46px;
+}
+section .options-block .input-block .input-searched div {
+  cursor: pointer;
+  display: flex;
+}
+section .options-block .input-block .input-searched div img {
+  margin: 5px 20px;
+}
+section .options-block .input-block .input-searched div p {
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+section .options-block .input-block .input-searched div:hover {
+  background-color: darkcyan;
+  color: white;
+}
+section .options-block select {
+  background-color: darkcyan;
+  color: white;
+  font-size: 20px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+section .options-block select option {
+  background-color: white;
+  color: darkcyan;
+  cursor: pointer;
+}
+section .wrapper {
+  width: 1400px;
+  margin: 0 auto;
+}
+section .wrapper .list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+}
+section .wrapper .list .pokemonBlock {
+  border: 1px solid darkgray;
+  box-sizing: border-box;
+  width: 180px;
+  margin: 20px;
+  box-shadow: 0 0 5px 2px gray;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  background-color: white;
+}
+section .wrapper .list .pokemonBlock:hover {
+  box-shadow: 0 0 15px 4px gray;
+  transition: 0.3s ease-in-out;
+  transform: translateY(-5%);
+}
+section .wrapper .list .pokemonBlock:hover p {
+  transition: 0.3s ease-in-out;
+  letter-spacing: 4px;
+}
+section .wrapper .list .pokemonBlock p {
+  transition: 0.3s ease-in-out;
+  text-align: center;
+  text-transform: uppercase;
+  color: royalblue;
+  font-weight: 600;
+  margin-top: 30px;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+section .wrapper .list .pokemonBlock span {
+  margin: 20px auto;
+  display: block;
+  text-align: center;
+  color: darkcyan;
+  font-size: 26px;
+  letter-spacing: -2px;
+}
+section .wrapper .list .pokemonBlock img {
+  display: block;
+  margin: 40px auto;
+}
+section .wrapper .pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px auto;
+}
+section .wrapper .pagination button {
+  cursor: pointer;
+  margin: 10px;
+  padding: 15px 20px;
+  border: none;
+  background-color: darkcyan;
+  color: white;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 50%;
+}
+section .pokeinfoblock {
+  display: none;
+  position: absolute;
+  width: 50%;
+  margin: 0 auto;
+  background-color: white;
+  z-index: 1111;
+  top: 200px;
+  left: 20%;
+  box-shadow: 0 0 300px 100px gray;
+}
+section .pokeinfoblock h2 {
+  text-align: center;
+  margin: 20px auto;
+  font-size: 50px;
+  font-weight: 900;
+  color: darkcyan;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+section .pokeinfoblock div {
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-family: sans-serif;
+  font-size: 30px;
+  font-weight: 900;
+  color: white;
+  background-color: red;
+  padding: 2px 10px;
+  border-radius: 50%;
+}
+section .pokeinfoblock p {
+  display: block;
+  width: 40%;
+  font-size: 35px;
+  color: royalblue;
+  position: absolute;
+  top: 150px;
+  right: 20px;
+  line-height: 1.6;
+}
+section .pokeinfoblock img {
+  margin: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,210 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body{
+  background-color: blanchedalmond;
+}
+
+
+
+section{
+  width: 100%;
+  padding-top: 100px;
+  margin: 0 auto;
+  position: relative;
+
+  h1{
+    text-align: center;
+    margin-bottom: 50px;
+    color: darkcyan;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 60px;
+    letter-spacing: 5px;
+    text-decoration: underline;
+  }
+  .options-block{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    margin: 80px auto 50px auto;
+    .input-block{
+      position: relative;
+      .input-search{
+        position: relative;
+        padding: 10px 20px;
+        font-size: 20px;
+        z-index: 111 !important;
+        &:focus-visible{
+          outline: none;
+        }
+      }
+      .input-searched{
+        z-index: 11;
+        border: 1px solid black;
+        border-top: none;
+          width: 100%;
+        background-color: white;
+        position: absolute;
+        top: 46px;
+        div{
+          cursor: pointer;
+          display: flex;
+          img{
+            margin: 5px 20px;
+          }
+          p{
+            font-size: 18px;
+            letter-spacing: 1px;
+            font-weight: 600;
+            padding: 10px 20px;
+            text-transform: uppercase;
+
+          }
+          &:hover{
+            background-color: darkcyan;
+            color: white;
+          }
+        }
+      }
+    }
+    select{
+      background-color: darkcyan;
+      color: white;
+      font-size: 20px;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      option{
+        background-color: white;
+        color: darkcyan;
+        cursor: pointer;
+      }
+    }
+  }
+  .wrapper{
+    width: 1400px;
+    margin: 0 auto;
+    .list{
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      width: 100%;
+      .pokemonBlock{
+        border: 1px solid darkgray;
+        box-sizing: border-box;
+        width: 180px;
+        margin: 20px;
+        box-shadow: 0 0 5px 2px gray;
+        transition: 0.5s ease-in-out;
+        cursor: pointer;
+        background-color: white;
+
+        &:hover{
+          box-shadow: 0 0 15px 4px gray;
+          transition: 0.3s ease-in-out;
+          transform: translateY(-5%);
+
+          p{
+            transition: 0.3s ease-in-out;
+            letter-spacing: 4px;
+          }
+        }
+
+        p{
+          transition: 0.3s ease-in-out;
+          text-align: center;
+          text-transform: uppercase;
+          color: royalblue;
+          font-weight: 600;
+          margin-top: 30px;
+          font-size: 18px;
+          letter-spacing: 2px;
+        }
+        span{
+          margin: 20px auto;
+          display: block;
+          text-align: center;
+          color: darkcyan;
+          font-size: 26px;
+          letter-spacing: -2px;
+        }
+        img{
+          display: block;
+          margin: 40px auto;
+        }
+      }
+    }
+    .pagination{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 50px auto;
+      button{
+        cursor: pointer;
+        margin: 10px;
+        padding: 15px 20px;
+        border: none;
+        background-color: darkcyan;
+        color: white;
+        font-family: sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  .pokeinfoblock{
+    display: none;
+    position: absolute;
+    width: 50%;
+    margin: 0 auto;
+    background-color: white;
+    z-index: 1111;
+    top: 200px;
+    left: 20%;
+    box-shadow: 0 0 300px 100px gray;
+    h2{
+      text-align: center;
+      margin: 20px auto;
+      font-size: 50px;
+      font-weight: 900;
+      color: darkcyan;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    div{
+      cursor: pointer;
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      font-family: sans-serif;
+      font-size: 30px;
+      font-weight: 900;
+      color: white;
+      background-color: red;
+      padding: 2px 10px;
+      border-radius: 50%;
+    }
+    p{
+      display: block;
+      width: 40%;
+      font-size: 35px;
+      color: royalblue;
+      position: absolute;
+      top: 150px;
+      right: 20px;
+      line-height: 1.6;
+    }
+    img{
+      margin: 20px;
+    }
+
+  }
+
+}
